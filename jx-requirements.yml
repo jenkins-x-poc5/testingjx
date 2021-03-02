@@ -1,0 +1,24 @@
+cluster:
+  clusterName: ""
+  environmentGitOwner: "maheshgoud005"
+  environmentGitPublic: false
+  project: ""
+  provider: "kubernetes"
+  zone: ""
+environments:
+- key: dev
+- key: staging
+- key: production
+ingress:
+  domain: "test.vivek.com"
+  externalDNS: false
+  namespaceSubDomain: -jx.
+  tls:
+    email: ""
+    enabled: false
+    production: false
+secretStorage: local
+versionStream:
+    ref: "master"
+    url: https://github.com/jenkins-x/jenkins-x-versions.git
+webhook: lighthouse
